@@ -1,0 +1,343 @@
+    body .shell-top video {
+        width: 100%;
+      }
+      /* 将标题盒子放置于视频上方开门见山 */
+    body .shell-top .name {
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%,-50%);
+        width: 700px;
+        height: 220px;
+        border: solid 10px rgba(255,255,255,0.199);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+    body .shell-top .name h2 {
+        font: 100 70px 'font','华文琥珀';
+        color: #fff;
+        letter-spacing: 10px;
+      }
+      /* 导航栏的制作 */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+      }
+
+    body .grid {
+        width: 100%;
+        height: auto;
+        position: relative;
+        transition: .2s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+      }
+      
+    body .grid-nav {
+        width: 100%;
+        height: 60px;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        background-color: black;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+        backdrop-filter: blur(13px);
+        overflow: hidden;
+      }
+      
+    body .grid-nav .logo {
+        width: 220px;
+        height: 100%;
+        position: absolute;
+        left: 5%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+      }
+      
+    body .grid-nav .logo img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+      }
+
+    body .grid-nav .logo span {
+        font: 100 22px 'font';
+        letter-spacing: 2px;
+      }
+      
+    body .grid-nav ul {
+        width: 600px;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        right: 5%;
+      }
+    /* 使导航栏下方有彩色跟踪条效果   */
+    body .grid-nav ul .nav-box {
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 115px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: red;
+        z-index: -999;
+        transition: .5s;
+      }
+      
+    body .grid-nav ul li {
+        width: 150px;
+        text-align: center;
+      }
+      
+      body .grid-nav ul li a {
+        color: #000;
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 60px;
+        text-align: center;
+      }
+      /* 跟踪条着色 */
+    body .grid-nav ul li:nth-child(1):hover~.nav-box {
+        left: 0px;
+        background-color: black;
+      }
+
+    body .grid-nav ul li:nth-child(2):hover~.nav-box {
+        left: 120px;
+        background-color: red;
+      }
+      
+    body .grid-nav ul li:nth-child(3):hover~.nav-box {
+        left: 240px;
+        background-color: #8da1f8;
+      }
+      
+    body .grid-nav ul li:nth-child(4):hover~.nav-box {
+        left: 360px;
+        background-color: #ffb1b1;
+      }
+      
+    body .grid-nav ul li:nth-child(5):hover~.nav-box {
+        left: 480px;
+        background-color: #7df88e;
+      }
+    
+    .head {
+        text-align: center;
+        margin-block-end: 2.5em;
+      }
+
+    button {
+        height: 44px;
+        width: 116px;
+        margin-top: 35px;
+        border-radius: 50px;
+        border: none;
+        background: rgba(11, 10, 10, 0.943);
+        color: #fff;
+        font-size: 14.5px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+      }
+
+    button:hover {
+        background-color: #111;
+      } 
+
+    .platform-box {
+        margin: 0 auto;
+        width: 1300px;
+      }
+
+    .platform-box h1 {
+        margin-bottom: 10px;
+      }
+
+    .platform  {
+        float: left;
+        margin: 0 70px 55px 0;
+        position: relative; 
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        }
+
+    .k img{
+          border-radius: 50%;
+        }
+
+
+    .ptlogo img{
+        display: block;
+        width: 180px;
+        height: 180px;
+      }
+
+    .zi {
+        position:inherit; 
+      }
+
+    .tu { 
+        float: left;
+      }
+
+    .zi {
+        float: right;
+        margin-right: 300px;
+        width: 320px;
+      }
+
+    .w {
+        width: 1200px;
+      }
+    /* 成员的单独介绍 */
+    .member {
+        width: 300px;
+        height: 450px;
+        box-shadow: 0 5px 5px rgb(0,0,0,.2);
+        margin: 0 auto;
+        float: left;
+        margin-right: 100px;
+        margin-bottom: 100px;
+         overflow: hidden;
+         border-radius: 5%; 
+      }
+
+    .main-top{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #333333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        transform: .3s;
+      }
+
+    .ball img{
+        width: 130px;
+        transform: .3s;
+        border-radius: 50%; 
+      }
+
+    .ball {
+        width: 130px;
+        height: 130px;
+        background-color: #5f71e0; 
+        border-radius: 50%;
+        border: 8px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .main-bottom {
+      width: 100%;
+      background-color: #5f71e0;
+      text-align: center;
+      font-size: 8px;
+      color: #111;
+      padding: 3px;
+      }
+
+    .main-bottom span {
+      display: block;
+      padding: 5px;
+      writing-mode: tb-r1;
+    }
+    /* 使介绍盒子有鼠标放置特效 */
+    .member:hover .main-top {
+      height: 340px;
+    }
+
+    .w:hover .ball img {
+      transform:rotate(30dge) scale(1.2) translate(0,-15px)
+    }
+
+    .data-box {
+      display: flex;
+      width: 1300px;
+      margin-top:10px;
+      justify-content: space-between; 
+    }
+
+    .data {
+      display: flex;
+      width: 250px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .data img {
+      width: 240px;
+      height: 163px;
+      min-width: 200px;
+    }
+    .count {
+      font-size: 20px;
+      color: #333;
+      line-height: 20px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+    .des {
+      font-size: 13.5px;
+      box-sizing: border-box;
+      text-align: center;
+
+    }
+    /* 简约的页脚设计,应用于所有网页 */
+    .main-footer {
+      padding-top: 0;
+      padding-bottom: 28px;
+      width: 100%;
+      background-color: #000;
+      position: relative;
+      margin-top: 50px;
+    }
+
+    .footerbox {
+      margin-left: 300px;
+    }
+
+    .footerbox img{
+      border-radius: 50%;
+      width: 93px;
+      height: 93px;
+      position: relative;
+      top: 20px;
+      margin-left: 20px;
+    }
+
+    .desc {
+      color: #fff;
+      margin: 20px 25px;
+      font-size: 10px;
+    }
+    
+    .footerbox p {
+      color: #fff;
+    }
+    
+  
+    
+      
+
+
+
+      
+      
+      
+      

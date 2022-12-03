@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* 所有页面通设的css,包括了页面布局以及部分字体的引用 */
+@font-face {
+    font-family: 'font';
+    src: url("../font/优设标题圆.otf");
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none; 
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+body .shell {
+    width: 100%;
+    height: auto;
+    position: relative;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

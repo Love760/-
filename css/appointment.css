@@ -1,0 +1,149 @@
+/* 大标题的灯泡字效果设计 */
+.appo {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    width: 550px;
+    font: 900 90px '';
+    font-style: italic;
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+    z-index: 1;
+    margin: 0 auto; 
+    left: 0;
+    right: 0; 
+}
+
+.appo span {
+    transition: .5s;
+    transition-delay: calc(var(--i)*.2s);
+}
+
+/* 鼠标放置,变色因色差具有变亮效果 */
+.appo:hover span{
+    color: #fff;
+    text-shadow: 0 0 12px #fff; 
+   
+}
+/* 对图片填满盒子的设置 */
+img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* grid布局,定义边距,间隔,排列 */
+.pho {
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 270px;
+    grid-auto-flow: dense;
+}
+
+.pho>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 218, 240);
+    border-radius: 5px;
+    color: rgb(248, 248, 248);
+    font: 100 100px 'Kristen ITC';
+    position: relative;
+}
+
+.pho span {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    text-shadow: -5px 0 rgb(0, 0, 0), 0 4px rgb(0, 0, 0), 5px 0 rgb(0, 0, 0), 0 -5px rgb(0, 0, 0);
+    font-size: 70px;
+}
+/* 中心盒子的信息设置 */
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url(../img/we3.jpg);
+    background-size: 800px;
+}
+
+.card-bottom h2 {
+    display: block;
+    margin: 30px 0 20px 0;
+    font-size: 30px;
+    /* 透明度不遮挡图片,下同 */
+    opacity: 0.4;
+    text-align: center;
+}
+
+.card-bottom p {
+    font-size: 30px;
+    text-align: center; 
+    margin-bottom: 5px;
+}
+
+.card-bottom li{
+    margin: 25px;
+    font: 800 20px 'OCR A Std';
+    transition: .2s;
+    opacity: 0.4;
+}
+
+/* 鼠标放置,透明度,颜色鲜亮醒目便于阅者观看 */
+li:hover{
+    color:rgb(21, 237, 237);
+    opacity: 1;
+}
+
+.pho li {
+    font-size: 30px;
+}
+/* 定义三种放置图片的盒子的格式,呈现布局 */
+.pho .wide {
+    grid-column: span 2;
+}
+
+.pho .tall {
+    grid-row: span 2;
+}
+
+.pho .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.main-footer {
+    padding-top: 0;
+    padding-bottom: 28px;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .footerbox {
+    margin-left: 300px;
+  }
+
+  .footerbox img{
+    border-radius: 50%;
+    width: 93px;
+    height: 93px;
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+  }
+
+  .desc {
+    color: #fff;
+    margin: 20px 25px;
+    font-size: 10px;
+  }
+  
+  .footerbox p {
+    color: #fff;
+  }
+
