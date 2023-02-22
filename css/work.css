@@ -208,7 +208,7 @@ body {
   }
   /* 音乐播放器 */
   .player {
-    background-color: #fff;
+    background-color: #f1f3f4;
     border-radius: 8px;
     width: 475px;
     padding:20px;
@@ -245,11 +245,11 @@ body {
   }
   
   #item-2:checked ~ .player #test {
-    transform: translateY(-42px);
+    transform: translateY(-40px);
   }
   
   #item-3:checked ~ .player #test {
-    transform: translateY(-84px);
+    transform: translateY(-80px);
   }
   .two audio{
          height: 15px;
@@ -321,27 +321,27 @@ body {
     
   }
 
-.name-song{
+  .name-song{
     position: relative; 
     width: 410px; 
     display: flex;
     flex-direction: column;
-}
+  }
 
-.name-song .pi {
+  .name-song .pi {
     width: 200px;
     height: 20px;
-}
+  }
 
-.pi p {
+  .pi p {
     color: #2593ce;  
-}
+  }
 
 
-.name-song span {
+  .name-song span {
   font-size: 68px;
-}
-.down,.up{
+  }
+  .down,.up{
     font: 900 86px '';
     line-height: 150px;
     position: absolute;
@@ -349,45 +349,45 @@ body {
     /* 使文字上下移动时有0.4s的过渡效果 */
     transition: .4s;
     background-image: linear-gradient(to right, #a1c4fd, #c2e9fb);
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;  
     color: transparent;
-}
+  }
 
-.down{
+  .down{
     /* 裁剪文字的上半部分*/
     clip-path: inset(49% 0 0 0);
-}
-.up{
+  }
+  .up{
     /* 裁剪文字的下半部分 */
     clip-path: inset(1% 0 50% 0);
-}
-.name-song:hover .up,.name-song:hover .down{
+  }
+  .name-song:hover .up,.name-song:hover .down{
     /* 让--i为30的向上移动30px，-30的向下移动30px
     这样子就能空出60px留给中间的audio */
     top: calc(var(--i)*1px);
-}
+  }
 
-.name-song:hover {
+  .name-song:hover {
     opacity: 1;
-}
+  }
  
-.name-song audio {
+  .name-song audio {
     opacity: 0;
     transition: .3s;
     height: 83px;
     text-align: center;
-}
+  }
 
-.name-song:hover audio{
+  .name-song:hover audio{
     opacity: 1;
-}
+  }
 
 .shell  video {
   width: 500px;
   height: 300px;
-}
-/* 视频展示盒子的效果设置,边框,阴影,弧线 */
-.shell .sp {
+  }
+  /* 视频展示盒子的效果设置,边框,阴影,弧线 */
+  .shell .sp {
   display: flex;
   width: 100%;
   background-image:linear-gradient(to battom,rgb(24,16,61),rgb(31,16,25) );
@@ -400,49 +400,49 @@ body {
   box-shadow: 0px 2px 10px rgba(40, 40, 40, 0.5);
   border-radius: 8%;
  
-} 
+  } 
 
-.qq1 {
+  .qq1 {
   height: 215px;
-}
-.qq2 {
+  }
+  .qq2 {
   width: 600px;
   height: 215px;
-}
+  }
 
-.qq3 {
+  .qq3 {
   height: 215px;
-}
+  }
 
-.main-footer {
+  .main-footer {
   padding-top: 0;
   padding-bottom: 28px;
   width: 100%;
   background-color: #000;
   position: relative;
   margin-top: 50px;
-}
+  }
 
-.footerbox {
+  .footerbox {
   margin-left: 300px;
-}
+  }
 
-.footerbox img{
+  .footerbox img{
   border-radius: 50%;
   width: 93px;
   height: 93px;
   position: relative;
   top: 20px;
   margin-left: 20px;
-}
+  }
 
-.desc {
+  .desc {
   color: #fff;
   margin: 20px 25px;
   font-size: 10px;
-}
+  }
 
-.footerbox p {
+  .footerbox p {
   color: #fff;
-}
+  }
 
