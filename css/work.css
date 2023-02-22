@@ -154,7 +154,7 @@ body {
     cursor: pointer;
 }
   
-  .music-three {
+.music-three {
     width: 100%;
     max-width: 800px;
     max-height: 570px;
@@ -164,50 +164,50 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  .cards {
+.cards {
     position: relative;
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
-  }
+}
   
-  .card img {
+.card img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
-  }
+}
  
   
-  #item-2:checked ~ .cards #song-2,
-  #item-1:checked ~ .cards #song-1,
-  #item-3:checked ~ .cards #song-3 {
+#item-2:checked ~ .cards #song-2,
+#item-1:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-3 {
     transform: translatex(0) scale(1);
     border-radius: 10px;
     box-shadow: 0 2px 40px rgba(255, 255, 255, 0.8);
     opacity: 1;
     z-index: 1;
-  }
+}
   
-  #item-2:checked ~ .cards #song-3,
-  #item-1:checked ~ .cards #song-2,
-  #item-3:checked ~ .cards #song-1 {
+#item-2:checked ~ .cards #song-3,
+#item-1:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-1 {
     transform: translatex(50%) scale(0.8);
     opacity: 0.6;
     z-index: 0;
-  }
+}
   
-  #item-1:checked ~ .cards #song-3,
-  #item-2:checked ~ .cards #song-1,
-  #item-3:checked ~ .cards #song-2 {
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2 {
     transform: translatex(-50%) scale(0.8);
     opacity: 0.6;
     z-index: 0;
-  }
+}
   /* 音乐播放器 */
-  .player {
+.player {
     background-color: #f1f3f4;
     border-radius: 8px;
     width: 475px;
@@ -215,47 +215,50 @@ body {
     margin-top: 476px;
     box-shadow: 0px 2px 10px rgba(40, 40, 40, 0.5);
     position: relative;
-  }
-  .title{
+}
+
+.title{
     font:700 17px '';
-  }
-  .information {
+}
+
+.information {
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     height: 42px;
     overflow: hidden;
-  }
-  .info-area {
+}
+.info-area {
     width: 100%;
     position: absolute;
     top: 0;
     left: 50px;
     transition: transform 0.4s ease-in;
-  }
-  .song-info {
+}
+.song-info {
     width: calc(100% - 50px);
     display: block;
-  }
+}
  
-  /* 每次点击图片时，对应的歌曲列表就会向下移动 */
-  #item-2:checked ~ .player,.music-name#test {
+/* 每次点击图片时，对应的歌曲列表就会向下移动 */
+#item-2:checked ~ .player,.music-name#test {
     transform: translateY(0);
-  }
+}
   
-  #item-2:checked ~ .player #test {
+#item-2:checked ~ .player #test {
     transform: translateY(-40px);
-  }
+}
   
-  #item-3:checked ~ .player #test {
+#item-3:checked ~ .player #test {
     transform: translateY(-80px);
-  }
-  .two audio{
-         height: 15px;
-  }
+}
 
-  .music-work {
+.two audio{
+    height: 15px;
+}
+
+.music-work {
     position: relative;
     background-color: #fff;
     border-radius: 8px;
@@ -266,29 +269,29 @@ body {
     align-items: center;
     overflow: hidden;
     margin-right: 120px;
-  }
-  .music-work .logo { 
+}
+.music-work .logo { 
   width: 220px;
   height: 100%;
   position: absolute;
   display: flex;
-  }
+}
 
-  .music-work .logo img {
+.music-work .logo img {
     width: 88px;
     height: 88px;
     border-radius: 8%;
-  }
+}
 
-  .word-box {
+.word-box {
     display: flex; 
     flex-direction: column;
     align-items: center; 
     margin-left: 12px;
     font-style: italic;
-  }
+}
 
-  .music-name {
+.music-name {
     margin-bottom: 12px;
     max-width: 180px;
     font-size: 27px;
@@ -296,9 +299,9 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
+}
 
-  .auther {
+.auther {
     margin-bottom: 12px;
     max-width: 180px;
     font-size: 18px;
@@ -306,42 +309,43 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
+}
 
-  .music-work .aud {
+.music-work .aud {
     margin-top: 16px;
-  }
+}
 
-  .example {
+.example {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
     height: 190px;
     
-  }
+}
 
-  .name-song{
+.name-song{
     position: relative; 
     width: 410px; 
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .name-song .pi {
+.name-song .pi {
     width: 200px;
     height: 20px;
-  }
+}
 
-  .pi p {
+.pi p {
     color: #2593ce;  
-  }
+}
 
 
-  .name-song span {
+.name-song span {
   font-size: 68px;
-  }
-  .down,.up{
+}
+
+.down,.up{
     font: 900 86px '';
     line-height: 150px;
     position: absolute;
@@ -351,43 +355,45 @@ body {
     background-image: linear-gradient(to right, #a1c4fd, #c2e9fb);
     -webkit-background-clip: text;  
     color: transparent;
-  }
+}
 
-  .down{
+.down{
     /* 裁剪文字的上半部分*/
     clip-path: inset(49% 0 0 0);
-  }
-  .up{
+}
+
+.up{
     /* 裁剪文字的下半部分 */
     clip-path: inset(1% 0 50% 0);
-  }
-  .name-song:hover .up,.name-song:hover .down{
+}
+.name-song:hover .up,.name-song:hover .down{
     /* 让--i为30的向上移动30px，-30的向下移动30px
     这样子就能空出60px留给中间的audio */
     top: calc(var(--i)*1px);
-  }
+}
 
-  .name-song:hover {
+.name-song:hover {
     opacity: 1;
-  }
+}
  
-  .name-song audio {
+.name-song audio {
     opacity: 0;
     transition: .3s;
     height: 83px;
     text-align: center;
-  }
+}
 
   .name-song:hover audio{
     opacity: 1;
-  }
+}
 
 .shell  video {
   width: 500px;
   height: 300px;
-  }
-  /* 视频展示盒子的效果设置,边框,阴影,弧线 */
-  .shell .sp {
+}
+
+/* 视频展示盒子的效果设置,边框,阴影,弧线 */
+.shell .sp {
   display: flex;
   width: 100%;
   background-image:linear-gradient(to battom,rgb(24,16,61),rgb(31,16,25) );
@@ -399,50 +405,50 @@ body {
   height: 400px;
   box-shadow: 0px 2px 10px rgba(40, 40, 40, 0.5);
   border-radius: 8%;
- 
-  } 
+} 
 
-  .qq1 {
+.qq1 {
   height: 215px;
-  }
-  .qq2 {
+}
+
+.qq2 {
   width: 600px;
   height: 215px;
-  }
+}
 
-  .qq3 {
+.qq3 {
   height: 215px;
-  }
+}
 
-  .main-footer {
+.main-footer {
   padding-top: 0;
   padding-bottom: 28px;
   width: 100%;
   background-color: #000;
   position: relative;
   margin-top: 50px;
-  }
+}
 
-  .footerbox {
+.footerbox {
   margin-left: 300px;
-  }
+}
 
-  .footerbox img{
+.footerbox img{
   border-radius: 50%;
   width: 93px;
   height: 93px;
   position: relative;
   top: 20px;
   margin-left: 20px;
-  }
+}
 
-  .desc {
+.desc {
   color: #fff;
   margin: 20px 25px;
   font-size: 10px;
-  }
+}
 
-  .footerbox p {
+.footerbox p {
   color: #fff;
-  }
+}
 
